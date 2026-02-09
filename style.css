@@ -1,0 +1,145 @@
+/* Reset & global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #ffe6e6;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    color: #c9184a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    color: #333;
+    padding: 12px 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.sidebar a:hover {
+    background: #ffb3b3;
+    color: #900;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 250px; /* width of sidebar */
+    padding: 40px;
+    flex: 1;
+    min-height: 100vh;
+}
+
+/* Cards & Boxes */
+.card, .welcome-box, .alerts, .donor-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.donor-card {
+    background: #fff0f0;
+    border-left: 5px solid #b10000;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.text-danger-strong {
+    color: #b10000;
+    font-weight: 700;
+}
+
+/* Buttons */
+.btn-custom {
+    background: #b10000;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    margin: 5px 3px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-custom:hover {
+    background: #900000;
+    transform: scale(1.05);
+}
+
+/* Forms */
+form {
+    width: 100%;
+}
+
+input.form-control, select.form-control {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Centered card for registration page */
+.center-card {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+/* Tables */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table.table th, table.table td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table.table th {
+    background-color: #f8f8f8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .center-card {
+        margin: 20px auto;
+    }
+}
